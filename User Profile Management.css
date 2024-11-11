@@ -1,0 +1,82 @@
+<div class="container">
+    <h1>User Profile Management</h1>
+    <form action="#" method="POST">
+        <!-- Profile Header -->
+        <div class="profile-header">
+            <img src="https://via.placeholder.com/100" alt="Profile Picture" id="profilePic">
+            <button type="button" onclick="document.getElementById('fileInput').click()">Change Picture</button>
+            <input type="file" id="fileInput" style="display: none;" onchange="previewImage(event)">
+        </div>
+
+        <!-- Profile Information -->
+        <div class="form-container">
+            <div class="form-group">
+                <label for="username">Full Name</label>
+                <input type="text" id="username" name="username" placeholder="Ex. Bob Lee" required>
+            </div>
+
+            <div class="form-group">
+                <label for="additionalName">Additional Name (if any)</label>
+                <input type="text" id="additionalName" name="additionalName" placeholder="Ex. Bob Jr." />
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                    <option value="preferNotToSay">Prefer not to say</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Ex. boblee@hotmail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="bio">Bio</label>
+                <textarea id="bio" name="bio" placeholder="Please provide a brief description of yourself..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="education">Education Level</label>
+                <select id="education" name="education">
+                    <option value="highSchool">High School</option>
+                    <option value="associateDegree">Associate Degree</option>
+                    <option value="bachelorDegree">Bachelor's Degree</option>
+                    <option value="masterDegree">Master's Degree</option>
+                    <option value="doctorate">Doctorate</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Mailing Address</label>
+                <input type="text" id="address" name="address" placeholder="123 Main St, City, Country" />
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890" />
+            </div>
+
+            <div class="form-group">
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company" placeholder="Ex. XYZ Corp." />
+            </div>
+
+            <div class="form-group">
+                <label for="jobTitle">Job Title</label>
+                <input type="text" id="jobTitle" name="jobTitle" placeholder="Ex. Software Engineer" />
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="button-group">
+            <button type="submit">Save Changes</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</div>
