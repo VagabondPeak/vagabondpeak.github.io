@@ -10,3 +10,12 @@ def home(request):
 
 def homepage(request):
     return HttpResponse()
+
+def login_view(request):
+    return render(request, 'Loginpage.html')
+
+def createAccount_view(request):
+    return render(request, 'CreateAccount.html')
+
+def about_view(request):
+    return render(request, 'about.html')
