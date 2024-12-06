@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/aboutUs.css' %}">
+</head>
+<body>
+    <div class="about-container">
+        <h2>About Tutors4You</h2>
+        <p>
+            Here at Tutors4You, we are a company dedicated to bringing together tutors and students to foster learning and education around the world. 
+            We built this website in hopes that students will come together, encourage one another, and learn to the best of their capabilities.
+        </p>
+        <p class="signup-link"> <a href="{% url 'home' %}">home</a>.</p>
+    </div>
+</body>
+</html>

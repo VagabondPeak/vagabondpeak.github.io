@@ -3,21 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Create Account</title>
     {% load static %}
-  <link rel="stylesheet" href="{% static 'css/CreateAccount.css' %}">
+    <link rel="stylesheet" href="{% static 'css/CreateAccount.css' %}">
 </head>
 <body>
-    <a href="signInPage.html">Login</a>
-    <a href="HomePage.html">HomePage</a>
-    <h1>Create Account</h1>
-    <p>Username: </p>
-    <input type="text">
-    <p>Password: </p>
-    <input type="text">
-    <p>Retype Password: </p>
-    <input type="text">
-    <p>Email: </p>
-    <input type="text">
+    <div class="form-container">
+        <h2>Create Account</h2>
+        <form id="createAccountForm">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirmPassword">Retype Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Create Account</button>
+        </form>
+        <p class="login-link">Already have an account? <a href="{% url 'login' %}">Login here</a>.</p>
+        <p class="signup-link">Want to go back? <a href="{% url 'home' %}">home</a>.</p>
+    </div>
 </body>
 </html>

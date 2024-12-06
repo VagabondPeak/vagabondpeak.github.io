@@ -17,5 +17,5 @@ def login_view(request):
 def createAccount_view(request):
     return render(request, 'CreateAccount.html')
 
-def about_view(request):
-    return render(request, 'about.html')
+def aboutUs_view(request):
+    return render(request, 'aboutUs.html')

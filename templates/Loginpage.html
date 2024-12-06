@@ -18,7 +18,8 @@
       <input type="password" id="password" name="password" required>
 
       <button type="submit">Login</button>
-      <p class="signup-link">Don't have an account? <a href="signup.html">Sign up here</a>.</p>
+      <p class="signup-link">Don't have an account? <a href="{% url 'createAccount' %}">Sign up here</a>.</p>
+      <p class="signup-link">Want to go back? <a href="{% url 'home' %}">home</a>.</p>
     </form>
   </div>
 
