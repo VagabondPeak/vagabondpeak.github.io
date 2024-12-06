@@ -10,7 +10,8 @@
 <body>
   <div class="login-container">
     <h2>Login to Tutors4You</h2>
-    <form id="loginForm">
+    <form method="POST" id="loginForm">
+      {% csrf_token %}
       <label for="username">Username</label>
       <input type="text" id="username" name="username" required>
 
@@ -22,7 +23,9 @@
       <p class="signup-link">Want to go back? <a href="{% url 'home' %}">home</a>.</p>
     </form>
   </div>
-
+  {% for message in messages %}
+    <p id=messages"> {{message}}</p>
+  {% endfor %}
   <script src="script.js"></script>
 </body>
 </html>

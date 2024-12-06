@@ -1,87 +1,69 @@
-/* General body styling */
+/* CreateAccount.css */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f7fc;
-    margin: 0;
-    padding: 0;
+    background-color: #f4f4f9;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-/* Container styles for the form */
-.container {
-    background-color: white;
-    padding: 40px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
+.form-container {
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    width: 300px;
+    text-align: center;
 }
 
-/* Styling for the page title */
-h1 {
-    text-align: center;
+h2 {
+    margin-bottom: 1rem;
     color: #333;
 }
 
-/* Styling for form labels and inputs */
-label {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 5px;
+form label {
     display: block;
-}
-
-p {
-    margin: 10px 0;
+    margin: 0.5rem 0;
     font-size: 14px;
     color: #555;
 }
 
-/* Styling for form input fields */
-input[type="text"],
-input[type="password"],
-input[type="email"] {
+input {
     width: 100%;
-    padding: 12px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
     border-radius: 4px;
-    font-size: 16px;
 }
 
-/* Styling for the submit button */
 button {
     width: 100%;
-    padding: 12px;
-    background-color: #007bff;
+    padding: 0.7rem;
+    background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 4px;
-    font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
-/* Button hover effect */
 button:hover {
-    background-color: #0056b3;
+    background-color: #45a049;
 }
 
-/* Links styling */
-.links {
-    text-align: center;
-    margin-top: 20px;
+.login-link,
+.signup-link {
+    margin-top: 1rem;
+    font-size: 14px;
 }
 
-.links a {
-    color: #007bff;
+.login-link a,
+.signup-link a {
+    color: #4CAF50;
     text-decoration: none;
-    margin: 0 10px;
 }
 
-.links a:hover {
+.login-link a:hover,
+.signup-link a:hover {
     text-decoration: underline;
 }

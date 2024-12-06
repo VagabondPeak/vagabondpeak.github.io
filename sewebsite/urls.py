@@ -26,6 +26,7 @@ urlpatterns = [
     path('login/', views.login_view, name='login'),
     path('createAccount/', views.createAccount_view, name='createAccount'),
     path('about/', views.aboutUs_view, name='about'),
+    path('messages/', views.message_view, name='messages'),
 ]
 
 
